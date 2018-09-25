@@ -1,0 +1,100 @@
+@font-face {
+	font-family: Roboto;
+	src: url(Roboto.ttf); 
+}
+
+*{margin: 0; padding: 0; font-family: Roboto;}
+
+.content{
+	width: 840px;
+	max-width: 1050px; 
+	min-width: 360px;
+	margin: 0 auto;
+}
+
+div img{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	height: 403px;
+	display: inline-flex;
+}
+
+div.photo {
+	position: relative;
+	width: 64%;	
+	height: 100%;
+}
+
+.photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.4);  
+  z-index: 1;
+}
+
+div.titleHead, span.littleTitleHead, span.adv{
+	position: absolute;
+	z-index: 2;
+	text-transform: uppercase;
+	padding: 4px;
+	color: #fff;
+	font-size: 12pt;
+	letter-spacing: -.03em;
+	font-stretch: ultra-condensed;
+}
+
+span.titleHead{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+div.titleHead{
+	top: 45px;
+	font-size: 16pt;
+	margin-left: 9%;
+	max-width: 70%;
+	line-height: 28pt;
+}
+
+div.advantages{
+	position: absolute;
+	top: 220px;
+	right: 42%;
+	z-index: 2;
+}
+
+img.check{
+	width: 13px;
+	height: 13px;
+	margin: 0 5px -1px 0;
+}
+
+span.adv{
+	display: contents;
+	font-size: 10pt;
+}
+
+
+div.sale {
+	width: 36%;	
+	background-color: #9f36c7;
+	height: 100%;
+}
+
+div.action{
+	background-color: #ecd7f4;
+	border-radius: 3px;
+	position: absolute;
+	top: 200px;
+	max-width: 30%;
+	margin: 5px;
+	margin-left: 3%;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
