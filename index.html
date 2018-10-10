@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Lamp</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="jquery-3.2.1.min.js"></script>
-	<script src="script.js"></script>
+	<script src="scr/jquery-3.2.1.min.js"></script>
+	<script src="scr/jquery.mask.js"></script>
+	<script src="scr/script.js"></script>
+
 </head>
 <body>
 	<div class="content">
@@ -31,13 +33,43 @@
 			</div>
 			<div class="sale">
 				<div class="action">
-					<h4>осталось <span style="background-color: #9c38be; padding: 0 1px 0 3px;"> 9 </span> шт. на складе</h4>
-					<h5>актуально на <span id="cDate"></span></h5>
+					<h5>осталось <span style="background-color: #9c38be; padding: 0 0 0 3px;"> 9 </span> шт. на складе</h5>
+					<h6>актуально на <span id="cDate"></span></h6>
+					<input type="phone" class="phonNumber" placeholder="+375-(XX)-XXX-XX-XX">
+					<div class="orderDiv">
+						<span class="price">29,9 BYN<br><del>47 BYN</del></span>
+						<input type="submit" class="order" value="заказать">
+					</div>
 				</div>
 				
 			</div>
 		</div>
 	</div>
+	<section id="2">
+		<div class="lampVideo">
+			<div class="borderTr">
+				<div class="borderInline">
+					<div class="textHead">ребенку будет светло и спокойно, ведь с этим ночником<br>совсем не страшно в темноте</div>
+					<div class="wrapBorderVideo">
+						<div class="borderVideoTL"></div>
+						<div class="borderVideoTR"></div>
+						<div class="borderVideoBL"></div>
+						<div class="borderVideoBR"></div>
+						<div class="video">
+							<video id="lampVideo" controls="controls" poster="img/video/videoDefault.jpg" src="img/video/lamp.mp4">
+							   <!-- <source src="video/lamp.gif" type='video/ogg; codecs="theora, vorbis"'>
+							   <source src="video/lamp.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+							   <source src="video/lamp.webm" type='video/webm; codecs="vp8, vorbis"'>
+							   Тег video не поддерживается вашим браузером.  -->
+							</video>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
 
 	
 	

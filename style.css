@@ -19,6 +19,7 @@ div img{
 .header{
 	height: 403px;
 	display: inline-flex;
+	width: 100%;
 }
 
 div.photo {
@@ -81,8 +82,9 @@ span.adv{
 
 
 div.sale {
+	position: relative;
 	width: 36%;	
-	background-color: #9f36c7;
+	background-color: #a731c6;
 	height: 100%;
 }
 
@@ -90,11 +92,32 @@ div.action{
 	background-color: #ecd7f4;
 	border-radius: 3px;
 	position: absolute;
-	top: 200px;
-	max-width: 30%;
-	margin: 5px;
-	margin-left: 3%;
+	top: 210px;
+	max-width: 80%;
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
+	width: 190px;
+	left: 50%;
+	transform: translateX(-50%);
 }
+
+h6, h5{padding-top: 10px;}
+div.orderDiv{ margin-top: 10px; font-size: 10pt; display: flex; justify-content: space-around;}
+input[type=phone]{border-radius: 3px; border-color:#9f36c7; margin-top: 10px;}
+span.price{ color: #9f36c7; font-weight: 600;}
+del{font-size: .7em; font-weight: 400; color: #000;}
+input.order{ border-radius: 6px; text-transform: uppercase; color: #fff; background-color: #9f36c7; padding: 5px; font-size: 12pt; cursor: pointer; outline: none;}
+section{margin-top: -4px; width: 100%;}
+div.lampVideo{ height: 420px; width: 585px; margin: 0 auto; position: relative;}
+div.borderTr{ border: 60px solid #fff; height: 300px; border-image-source: url(img/triangle.png); z-index: 2;}
+div.borderInline{ border: solid #a731c6 1px; width: 524px; height: 418px; position: absolute; top: 0; left: 30px; z-index: 1; border-bottom: none; border-top: none;}
+div.textHead{ text-transform: uppercase; font-size: 11pt; text-align: center; font-weight: 600; margin-top: 48px; transform:scale(1.05,1.6); }
+div.wrapBorderVideo{ position: relative; width: 399px; height: 235px; margin: 0 auto; margin-top: -10px;}
+div.borderVideoTL, div.borderVideoTR, div.borderVideoBL, div.borderVideoBR{ position: absolute; width: 40px; height: 40px; border: solid #9f36c7 1px;}
+div.borderVideoTL{ top: 0; left: 0; border-right: none; border-bottom: none; }
+div.borderVideoTR{ top: 0; right: 0;}
+div.borderVideoBL{ bottom: 0; left: 0;}
+div.borderVideoBR{ bottom: 0; right: 0; border-left: none; border-top: none; }
+div.video{ position: relative; top: 15px; width: 365px; height: 205px; margin: 0 auto; margin-top: 30px; background-color: #ccc;}
+video { width: 100%; height: 100%;}
