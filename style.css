@@ -101,7 +101,7 @@ div.action{
 	left: 50%;
 	transform: translateX(-50%);
 }
-
+div.lampVideo, div.lampCase, div.wrapBorderVideo, div.video, div.shortDescription, div.shortDescriptionItem .photoI, div.shortDescriptionItem .description{ margin: 0 auto; }
 h6, h5{padding-top: 10px;}
 div.orderDiv{ margin-top: 10px; font-size: 10pt; display: flex; justify-content: space-around;}
 input[type=phone]{border-radius: 3px; border-color:#9f36c7; margin-top: 10px;}
@@ -109,15 +109,39 @@ span.price{ color: #9f36c7; font-weight: 600;}
 del{font-size: .7em; font-weight: 400; color: #000;}
 input.order{ border-radius: 6px; text-transform: uppercase; color: #fff; background-color: #9f36c7; padding: 5px; font-size: 12pt; cursor: pointer; outline: none;}
 section{margin-top: -4px; width: 100%;}
-div.lampVideo{ height: 420px; width: 585px; margin: 0 auto; position: relative;}
+div.lampVideo, div.lampCase{width: 585px; position: relative;}
+/*div.lampVideo{ height: 420px;}*/
 div.borderTr{ border: 60px solid #fff; height: 300px; border-image-source: url(img/triangle.png); z-index: 2;}
-div.borderInline{ border: solid #a731c6 1px; width: 524px; height: 418px; position: absolute; top: 0; left: 30px; z-index: 1; border-bottom: none; border-top: none;}
+div.borderLine{ border: solid #a731c6 1px; width: 524px; position: absolute; left: 30px; z-index: 1; border-bottom: none; border-top: none;}
+div.lampVideo div.borderLine{top: 0; height: 418px; }
 div.textHead{ text-transform: uppercase; font-size: 11pt; text-align: center; font-weight: 600; margin-top: 48px; transform:scale(1.05,1.6); }
-div.wrapBorderVideo{ position: relative; width: 399px; height: 235px; margin: 0 auto; margin-top: -10px;}
+div.wrapBorderVideo{ position: relative; width: 399px; height: 235px; margin-top: -10px;}
 div.borderVideoTL, div.borderVideoTR, div.borderVideoBL, div.borderVideoBR{ position: absolute; width: 40px; height: 40px; border: solid #9f36c7 1px;}
 div.borderVideoTL{ top: 0; left: 0; border-right: none; border-bottom: none; }
 div.borderVideoTR{ top: 0; right: 0;}
 div.borderVideoBL{ bottom: 0; left: 0;}
 div.borderVideoBR{ bottom: 0; right: 0; border-left: none; border-top: none; }
-div.video{ position: relative; top: 15px; width: 365px; height: 205px; margin: 0 auto; margin-top: 30px; background-color: #ccc;}
+div.video{ position: relative; top: 15px; width: 365px; height: 205px; margin-top: 30px; background-color: #ccc;}
 video { width: 100%; height: 100%;}
+
+/*3section*/
+div.shortDescription{ width: 500px; border: solid #9f36c7 1px; width: 94%; display: flex; flex-wrap: wrap;}
+div.shortDescriptionItem{ width: 33.33%; height: 343px; background-color: #fff; position: relative; }
+div.shortDescriptionItem:nth-child(odd) {background: #fbd7fd;}
+div.shortDescriptionItem .photoI{ height: 155px; width: 200px; margin-top: 30px;}
+.photoI img{ object-fit: cover; }
+div.shortDescriptionItem .title{ font-weight: 600; text-transform: uppercase; transform:scale(0.7,1.1); font-size: 10pt; margin-top: 10px; margin-left: -10px; }
+div#item-1 .title{ font-size: 17pt; top: 38%; left: 25px; position: relative; }
+div.shortDescriptionItem .description{ font-size: 9px; margin-top: 10px; width: 200px; }
+div#item-1:after, div#item-2:after, div#item-3:after, div#item-4:after, div#item-5:after, div#item-6:after {position: absolute; content: ''; width: 0; height: 0; border: solid rgba(255, 255, 255, 0) 20px; z-index:2;}
+div#item-1:after{ border-left-color: #fbd7fd; right: 0; top: 25%; margin-right: -40px;}
+div#item-2:after{ border-left-color: #fff; right: 0; top: 25%; margin-right: -40px;}
+div#item-3:after{ border-top-color: #fbd7fd; left: 50%; bottom: 0; margin-bottom: -40px; transform: translateX(-50%);}
+div#item-6:after{ border-right-color: #fff; left: 0; top: 25%; margin-left: -40px;}
+div#item-5:after{ border-right-color: #fbd7fd; left: 0; top: 25%; margin-left: -40px;}
+
+/*4section*/
+div.lampCase div.borderTr{ margin-top: 28px; height: 330px; }
+div.lampCase div.borderLine {top: -25px; height: 468px; }
+div.wrapLampCase{ width: 788px; height: 315px; margin: 75px 0 0 -135px; background-color: #fff; display: flex; flex-wrap: wrap;}
+div.wrapLampCase div.photoI{ width: 20%; height: 50%; }
