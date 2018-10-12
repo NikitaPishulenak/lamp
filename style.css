@@ -101,7 +101,7 @@ div.action{
 	left: 50%;
 	transform: translateX(-50%);
 }
-div.lampVideo, div.lampCase, div.wrapBorderVideo, div.video, div.shortDescription, div.shortDescriptionItem .photoI, div.shortDescriptionItem .description{ margin: 0 auto; }
+div.lampVideo, div.lampCase, div.wrapBorderVideo, div.video, div.shortDescription, div.shortDescriptionItem .photoI, div.shortDescriptionItem .description, div.makeDiscont{ margin: 0 auto; }
 h6, h5{padding-top: 10px;}
 div.orderDiv{ margin-top: 10px; font-size: 10pt; display: flex; justify-content: space-around;}
 input[type=phone]{border-radius: 3px; border-color:#9f36c7; margin-top: 10px;}
@@ -142,6 +142,17 @@ div#item-5:after{ border-right-color: #fbd7fd; left: 0; top: 25%; margin-left: -
 
 /*4section*/
 div.lampCase div.borderTr{ margin-top: 28px; height: 330px; }
-div.lampCase div.borderLine {top: -25px; height: 468px; }
+div.lampCase div.borderLine {top: -25px; height: 471px; }
 div.wrapLampCase{ width: 788px; height: 315px; margin: 75px 0 0 -135px; background-color: #fff; display: flex; flex-wrap: wrap;}
 div.wrapLampCase div.photoI{ width: 20%; height: 50%; }
+
+/*5section*/
+div.reviews{ position: relative; width: 100%; height: 200px; background-color: #fbd7fd; text-align: center; }
+div.stock{ font-size: 15pt; transform:scale(0.7,1.15); font-weight: 600; padding-top: 20px; text-transform: uppercase;}
+div.leftBrace, div.rightBrace{ position: absolute; border: solid #a731c6 1px; top: 55px; width: 25px; height: 120px;}
+div.leftBrace{border-right: none; left: 105px;}
+div.rightBrace{border-left: none; right: 105px;}
+div.makeDiscont{width: 65%; border: solid #a731c6 1px;}
+div.itemDiscount div{display: table;}
+div.itemDiscount .img{width: 70px; height: 70px; border: solid #a731c6 1px; border-radius: 100%;}
+div.itemDiscount img{ width: 50%; height: 50%; padding-top: 20%;}
