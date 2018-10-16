@@ -40,7 +40,7 @@ div.photo {
   z-index: 1;
 }
 
-div.titleHead, span.littleTitleHead, span.adv{
+div.titleHead, span.littleTitleHead, div.adv{
 	position: absolute;
 	z-index: 2;
 	text-transform: uppercase;
@@ -48,7 +48,6 @@ div.titleHead, span.littleTitleHead, span.adv{
 	color: #fff;
 	font-size: 12pt;
 	letter-spacing: -.03em;
-	font-stretch: ultra-condensed;
 }
 
 span.titleHead{
@@ -68,6 +67,7 @@ div.advantages{
 	top: 220px;
 	right: 42%;
 	z-index: 2;
+	width: 300px;
 }
 
 img.check{
@@ -76,8 +76,8 @@ img.check{
 	margin: 0 5px -1px 0;
 }
 
-span.adv{
-	display: contents;
+div.adv{
+	/*display: contents;*/
 	font-size: 10pt;
 }
 
@@ -115,7 +115,7 @@ section{margin-top: -4px; width: 100%;}
 div.lampVideo, div.lampCase{width: 585px; position: relative;}
 div.borderTr{ border: 60px solid #fff; height: 300px; border-image-source: url(img/triangle.png); z-index: 2;}
 div.borderLine{ border: solid #a731c6 1px; width: 524px; position: absolute; left: 30px; z-index: 1; border-bottom: none; border-top: none;}
-div.lampVideo div.borderLine{top: 0; height: 418px; }
+div.lampVideo div.borderLine{top: 0; height: 416px; }
 div.textHead{ text-transform: uppercase; font-size: 11pt; text-align: center; font-weight: 600; margin-top: 48px; transform:scale(1.05,1.6); }
 div.wrapBorderVideo{ position: relative; width: 399px; height: 235px; margin-top: -10px;}
 div.borderVideoTL, div.borderVideoTR, div.borderVideoBL, div.borderVideoBR{ position: absolute; width: 40px; height: 40px; border: solid #9f36c7 1px;}
@@ -131,6 +131,7 @@ div.shortDescription{ width: 500px; border: solid #9f36c7 1px; width: 94%; displ
 div.shortDescriptionItem{ width: 33.33%; height: 343px; background-color: #fff; position: relative; }
 div.shortDescriptionItem:nth-child(odd) {background: #fbd7fd;}
 div.shortDescriptionItem .photoI{ height: 155px; width: 200px; margin-top: 30px;}
+div.lampCase div.photoI:hover{ box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); transition: all 0.2s ease-out; z-index: 3;}
 .photoI img{ object-fit: cover; }
 div.shortDescriptionItem .title{ font-weight: 600; text-transform: uppercase; transform:scale(0.7,1.1); font-size: 10pt; margin-top: 10px; margin-left: -10px; }
 div#item-1 .title{ font-size: 17pt; top: 38%; left: 25px; position: relative; }
@@ -145,8 +146,7 @@ div#item-5:after{ border-right-color: #fbd7fd; left: 0; top: 25%; margin-left: -
 /*4section*/
 div.lampCase div.borderTr{ margin-top: 28px; height: 330px; }
 div.lampCase div.borderLine {top: -25px; height: 471px; }
-div.wrapLampCase, div.wrapButHeader { width: 788px;  margin: 75px 0 0 -135px; background-color: #fff;}
-div.wrapLampCase {display: flex; flex-wrap: wrap;  height: 315px;}
+div.wrapLampCase { width: 788px;  margin: 75px 0 0 -135px; background-color: #fff; display: flex; flex-wrap: wrap;  height: 315px;}
 div.wrapLampCase div.photoI{ width: 20%; height: 50%; }
 
 /*5section*/
@@ -168,9 +168,11 @@ div.historyImg img{ width: 150px; height: 150px; border-radius: 100%;}
 div.historyTxt{ width: 70%; text-align: left; font-size: 8pt; padding-left: 20px; padding-right: 20px;}
 div.historyTxt strong, div.historyTxt em{ color: #a731c6; font-size: 10pt;}
 
+div.wrapButHeader { width: 840px;  margin: 75px 0 0 -158px; background-color: #fff;}
 div.trLine{position: relative;}
 div.trLine div.borderTr{ margin-top: 40px; height: 425px; width: 465px;}
-div.trLine div.borderLine{height: 582px; top: -37px; left: 158px;}
+div.trLine div.borderLine{height: 582px; top: -37px; left: 157px;}
 div.wrapButHeader{ height: 300px; margin-top: 95px;}
 
-footer{border: solid #a0a0a0 1px;}
+footer{background-color: rgba(0,0,0,.4); color: #fff; padding: 10px 40px 10px 0;  display: flex; justify-content: space-around;}
+

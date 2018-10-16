@@ -7,4 +7,5 @@ $(document).ready(function(){
 	};
 
 	$("#cDate").text(cDate.toLocaleString("ru", options));
+	$("a.s_b_photo").fancybox();
 });
