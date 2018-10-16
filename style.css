@@ -115,7 +115,7 @@ div.itemDiscount .txt{width: 60%; font-size: 8pt; padding-top: 20px; padding-lef
 div.itemDiscount img{ width: 60%; height: 50%; padding-top: 20%;}
 
 div.historyItem{ margin-top: 40px; }
-div.historyImg{ width: 30%;}
+div.historyImg{ width: 30%; }
 div.historyImg img{ width: 150px; height: 150px; border-radius: 100%;}
 div.historyTxt{ width: 70%; text-align: left; font-size: 8pt; padding-left: 20px; padding-right: 20px;}
 div.historyTxt strong, div.historyTxt em{ color: #a731c6; font-size: 10pt;}
