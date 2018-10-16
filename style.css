@@ -5,62 +5,14 @@
 
 *{margin: 0; padding: 0; font-family: Roboto;}
 
-.content{
-	width: 840px;
-	max-width: 1050px; 
-	min-width: 360px;
-	margin: 0 auto;
-}
-
-div img{
-	width: 100%;
-	height: 100%;
-}
-.header{
-	position: relative;
-	height: 403px;
-	display: inline-flex;
-	width: 100%;
-}
-
-div.photo {
-	position: relative;
-	width: 64%;	
-	height: 100%;
-}
-
-.photo::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,.4);  
-  z-index: 1;
-}
-
-div.titleHead, span.littleTitleHead, div.adv{
-	position: absolute;
-	z-index: 2;
-	text-transform: uppercase;
-	padding: 4px;
-	color: #fff;
-	font-size: 12pt;
-	letter-spacing: -.03em;
-}
-
-span.titleHead{
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-div.titleHead{
-	top: 45px;
-	font-size: 16pt;
-	margin-left: 9%;
-	max-width: 70%;
-	line-height: 28pt;
-}
+.content{width: 840px; margin: 0 auto;}
+div img{ width: 100%; height: 100%;}
+.header{ position: relative; height: 403px;	display: inline-flex; width: 100%;}
+div.photo {	position: relative;	width: 64%;	height: 100%;}
+.photo::before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.4); z-index: 1;}
+div.titleHead, span.littleTitleHead, div.adv{ position: absolute; z-index: 2; text-transform: uppercase; padding: 4px; color: #fff; font-size: 12pt; letter-spacing: -.03em;}
+span.titleHead{	background-color: rgba(0, 0, 0, 0.4);}
+div.titleHead{top: 45px; font-size: 16pt; margin-left: 100px; line-height: 28pt;}
 
 div.advantages{
 	position: absolute;
@@ -77,7 +29,7 @@ img.check{
 }
 
 div.adv{
-	/*display: contents;*/
+	background-color: rgba(0,0,0,.3);
 	font-size: 10pt;
 }
 
@@ -108,8 +60,8 @@ div.lampVideo, div.lampCase, div.wrapBorderVideo, div.video, div.shortDescriptio
 h6, h5{padding-top: 10px;}
 div.orderDiv{ margin-top: 10px; font-size: 10pt; display: flex; justify-content: space-around;}
 input[type=phone]{border-radius: 3px; border-color:#9f36c7; margin-top: 10px;}
-span.price{ color: #9f36c7; font-weight: 600;}
-del{font-size: .7em; font-weight: 400; color: #000;}
+span.price{ color: #ff0000; font-weight: 600; font-size: 12pt;}
+del{font-size: .8em; font-weight: 400; color: #000;}
 input.order{ border-radius: 6px; text-transform: uppercase; color: #fff; background-color: #9f36c7; padding: 5px; font-size: 12pt; cursor: pointer; outline: none;}
 section{margin-top: -4px; width: 100%;}
 div.lampVideo, div.lampCase{width: 585px; position: relative;}
@@ -127,15 +79,15 @@ div.video{ position: relative; top: 15px; width: 365px; height: 205px; margin-to
 video { width: 100%; height: 100%;}
 
 /*3section*/
-div.shortDescription{ width: 500px; border: solid #9f36c7 1px; width: 94%; display: flex; flex-wrap: wrap;}
+div.shortDescription{ width: 500px; border: solid #9f36c7 1px; width: 94%; display: flex; flex-wrap: wrap; padding-top: 1px;}
 div.shortDescriptionItem{ width: 33.33%; height: 343px; background-color: #fff; position: relative; }
 div.shortDescriptionItem:nth-child(odd) {background: #fbd7fd;}
 div.shortDescriptionItem .photoI{ height: 155px; width: 200px; margin-top: 30px;}
 div.lampCase div.photoI:hover{ box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); transition: all 0.2s ease-out; z-index: 3;}
 .photoI img{ object-fit: cover; }
-div.shortDescriptionItem .title{ font-weight: 600; text-transform: uppercase; transform:scale(0.7,1.1); font-size: 10pt; margin-top: 10px; margin-left: -10px; }
+div.shortDescriptionItem .title{ font-weight: 600; text-transform: uppercase; transform:scale(0.7,1.1); font-size: 11pt; margin-top: 10px; margin-left: -10px; }
 div#item-1 .title{ font-size: 17pt; top: 38%; left: 25px; position: relative; }
-div.shortDescriptionItem .description{ font-size: 9px; margin-top: 10px; width: 200px; }
+div.shortDescriptionItem .description{ font-size: 11px; margin-top: 10px; width: 200px; }
 div#item-1:after, div#item-2:after, div#item-3:after, div#item-4:after, div#item-5:after, div#item-6:after {position: absolute; content: ''; width: 0; height: 0; border: solid rgba(255, 255, 255, 0) 20px; z-index:2;}
 div#item-1:after{ border-left-color: #fbd7fd; right: 0; top: 25%; margin-right: -40px;}
 div#item-2:after{ border-left-color: #fff; right: 0; top: 25%; margin-right: -40px;}
@@ -176,3 +128,4 @@ div.wrapButHeader{ height: 300px; margin-top: 95px;}
 
 footer{background-color: rgba(0,0,0,.4); color: #fff; padding: 10px 40px 10px 0;  display: flex; justify-content: space-around;}
 
+.hidden {opacity: 0;}
