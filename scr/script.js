@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(".phonNumber").mask("+375 (99) 999-99-99");
 	let cDate=new Date();
 	var options = {
 	  month: 'long',
@@ -30,5 +31,11 @@ $(document).ready(function(){
 		    }
 	  	}
 	  });
+	});
+
+	$(".order").click(function(){
+		if(!$(".phonNumber").mask("+375 (99) 999-99-99")) alert("kj");
+		alert($(this).parent().parent().find(".phonNumber").val());
+		// $.getScript("another_script.js", function(){alert("Загружено.");});
 	});
 });

@@ -171,7 +171,7 @@ footer{background-color: rgba(0,0,0,.4); color: #fff; padding: 10px 0 10px 0;  d
 	footer{padding: 8px 0 8px 0;  font-size: 14px;}
 }
 
-@media only screen and (max-width: 559px){
+@media only screen and (min-width: 350px) and (max-width: 559px){
 	.content{width: 100%; }
 	.header{ height: 420px; width: 100%; display: flex; flex-wrap: wrap;}
 	span.littleTitleHead, span.price{ font-size: 10pt;}
@@ -187,42 +187,40 @@ footer{background-color: rgba(0,0,0,.4); color: #fff; padding: 10px 0 10px 0;  d
 	div.orderDiv{ margin-top: 7px; }
 	span.price, input.order{ font-size: 10pt;}
 
-
-	div.lampVideo { width: 500px;}
-	div.borderLine{ width: 439px; }
-	div.lampVideo div.borderLine{ height: 420px; }
-	div.textHead{ font-size: 13px; }
-	div.wrapBorderVideo{ width: 352px; height: 207px; }
-	div.video{ top: 13px; width: 322px; height: 182px; }
+	div.lampVideo { width: 340px;}
+	div.borderLine{ width: 279px; }
+	div.lampVideo div.borderLine{ height: 310px; }
+	div.textHead{ font-size: 8px;}
+	div.borderTr{ height: 190px;}
+	div.wrapBorderVideo{ width: 236px; height: 145px; }
+	div.video{ top: 9px; width: 215px; height: 127px; }
 
 	/*3section*/
-	div.shortDescriptionItem{ width: 50%; height: 350px; background: #fff; }
-	div.shortDescriptionItem:nth-child(odd) {background: inherit;}
-	div#item-1, div#item-4, div#item-5{background: #fbd7fd; position: relative;}
-	div.shortDescriptionItem .photoI{ height: 149px; width: 192px; margin-top: 30px;}
+	div.shortDescriptionItem{ width: 100%; height: 300px;}
+	
+	div.shortDescriptionItem .photoI{ height: 102px; width: 131px; margin-top: 25px;}
 	div.shortDescriptionItem .title{ margin-left: 0; text-align: center; }
-	div#item-1 .title{ text-align: inherit; left: 20px; font-size: 23px;}
-	div.shortDescriptionItem .description{ font-size: 12px;}
-	div#item-2:after, div#item-3:after{ border-left-color: transparent; border-top-color: #fff; left: 50%; top: 100%; margin-bottom: -40px; transform: translateX(-50%);}
-	div#item-4:after{ border-right-color: #fbd7fd; left: 0; top: 25%; margin-left: -40px;}
-	div#item-5:after{ border-right-color: transparent; left: inherit; margin-left: inherit; border-left-color: #fbd7fd; right: 0; top: 25%; margin-right: -40px; }
-	div#item-6:after{ border-right-color: transparent;}
+	div#item-1 .title{font-size: 23px; left: inherit;}
+	div.shortDescriptionItem .description{ font-size: 12px; width: 90%; padding: 0 7px 0 7px;}
+	div#item-1:after, div#item-3:after, div#item-5:after {border-top-color: #fbd7fd;}
+	div#item-2:after, div#item-4:after{border-top-color: #fff;}
+	div#item-1:after, div#item-2:after, div#item-3:after, div#item-4:after, div#item-5:after{left: 50%; top: 99%; margin-bottom: -39px; transform: translateX(-50%);}
+	div#item-1:after, div#item-2:after, div#item-4:after{ border-left-color: transparent;}
+	div#item-5:after, div#item-6:after{ border-right-color: transparent; margin-left: inherit;}
 
-	div.lineBorderTr{ width: 382px;}
-	div.lineBorderLine{ width: 441px;}
-	div.wrapLampCase { width: 540px; height: 540px;}
-	div.wrapLampCase div.photoI{ width: 33.33%; height: 33.33%;  }
-	div.wrapLampCase div.photoI:nth-child(10){ display: none; }
+	div.lineBorderTr{ width: 222px;}
+	div.lineBorderLine{ width: 281px;}
+	div.wrapLampCase { width: 340px; height: 850px;}
+	div.wrapLampCase div.photoI{ width: 50%; height: 20%; }
+	
 
 	div.itemDiscount { width: 100%;}
 	div.itemDiscount .txt { padding-top: 35px; }
-	div.makeDiscont { margin-top: 20px; }
+	div.itemDiscount .img{margin-left: 0;}
+	div.historyItem { margin-top: 20px; }
 	div.stock { font-size: 19px;}
-	div.leftBrace, div.rightBrace{ top: 100px; height: 180px;}
-	div.leftBrace { left: 10%;}
-	div.rightBrace { right: 10%;}
-	div.historyImg{ width: 25%; margin-top: 15px;}
-	div.historyImg img{ width: 100px; height: 100px; }
-	div.historyTxt{ width: 70%; padding-left: 10px; padding-right: 10px; font-size: 13px;}
-	footer{padding: 8px 0 8px 0;  font-size: 14px;}
+	div.leftBrace, div.rightBrace, div.historyImg { display: none;}
+	div.historyTxt{ width: 90%; padding-left: 10px; padding-right: 10px; font-size: 13px; margin-top: 20px;}
+	footer{padding: 10px 0 10px 0;  font-size: 14px; flex-wrap: wrap;}
+	footer div{ width: 100%; text-align: center; margin-top: 15px; }
 }
